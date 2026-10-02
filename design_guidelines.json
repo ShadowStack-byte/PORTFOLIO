@@ -1,0 +1,51 @@
+{
+  "app_type": "portfolio",
+  "project_name": "Vikas Subramani - Interactive Web Specialist & Lead Developer",
+  "archetype": "Editorial Future (Wide Display Sans + Geometric Body, high-end editorial light portfolio with bold typography and colorful interactions)",
+  "typography": {
+    "heading_font": "Playfair Display, serif",
+    "body_font": "Plus Jakarta Sans, sans-serif",
+    "mono_font": "JetBrains Mono, monospace"
+  },
+  "colors": {
+    "primary": "#111111",
+    "accent": "#FF3366",
+    "secondary_accent": "#0052FF",
+    "background": "#F9F8F6",
+    "card_background": "#FFFFFF",
+    "muted_text": "#666666",
+    "border_color": "#E5E3DC"
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-[#F9F8F6]/80 border border-[#E5E3DC]",
+    "shadows": "shadow-[0_10px_30px_rgba(0,0,0,0.06)]",
+    "borders": "1px solid #E5E3DC"
+  },
+  "component_path": "/app/frontend/src/components",
+  "instructions_to_main_agent": [
+    "Build a stunning, highly interactive editorial light portfolio for Vikas Subramani, Lead Web Developer at Parul University Goa.",
+    "Include a custom smooth cursor effect, scroll reveals, rich kinetic typography, and vibrant interactive highlights.",
+    "Implement top navigation bar with glassmorphic style (solid/semi-solid background, NEVER fully transparent), branding, smooth anchor navigation, and quick contact action.",
+    "Hero section: Bold editorial statement, live availability status badge, interactive contact CTA buttons (Email, Phone +91 6362366890, WhatsApp), and professional portrait / workspace showcase.",
+    "Services & Team Capabilities section: Bento grid highlighting Fully Custom & Animated Interfaces, End-to-End Functionality, Cloud Infrastructure & GCP, and Unbeatable Cost-Efficiency.",
+    "Hackathon & Case Studies section: Interactive case study cards featuring Hackathon Project #1 (interactive web application with real-time API processing) and Hackathon Project #2 (multi-page cloud portal with GCP deployment).",
+    "Skills & Core Expertise section: Interactive filterable tags and categorized skill matrix (Frontend/Animations, Backend/Cloud, Design & Optimization).",
+    "Education & Certifications section: Parul University Goa Campus (Expected 2028), Google Cloud Platform Training & Skill Badges.",
+    "Client Pitch / Outreach Template viewer: Interactive copy-to-clipboard widget displaying Vikas's professional client pitch.",
+    "Interactive Project Inquiry Form: Fully functional form with validation, Shadcn UI inputs, and Sonner toast notification on success.",
+    "Footer: Dramatic editorial layout with direct contact info, social links, and quick navigation.",
+    "Ensure all interactive elements and buttons include `data-testid` attributes for robust automated testing."
+  ],
+  "image_urls": {
+    "workspace_hero": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGNyZWF0aXZlJTIwc3R1ZGlvJTIwd29ya3NwYWNlJTIwY29kZSUyMGxhcHRvcHxlbnwwfHx8fDE3OTA5MTQzNzB8MA&ixlib=rb-4.1.0&q=85",
+    "coding_setup": "https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGNyZWF0aXZlJTIwc3R1ZGlvJTIwd29ya3NwYWNlJTIwY29kZSUyMGxhcHRvcHxlbnwwfHx8fDE3OTA5MTQzNzB8MA&ixlib=rb-4.1.0&q=85",
+    "laptop_desk": "https://images.unsplash.com/photo-1525373698358-041e3a460346?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB3ZWIlMjBkZXZlbG9wbWVudCUyMGNyZWF0aXZlJTIwc3R1ZGlvJTIwd29ya3NwYWNlJTIwY29kZSUyMGxhcHRvcHxlbnwwfHx8fDE3OTA5MTQzNzB8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "You must build using .js/.jsx files (React JS with Tailwind CSS).",
+    "Never use fully transparent header backgrounds; use glassmorphism or solid backgrounds.",
+    "Every interactive element must include data-testid attributes.",
+    "Avoid generic centered layouts; use editorial asymmetry and generous spacing (p-8, p-12, etc.).",
+    "Use Sonner for toast notifications."
+  ]
+}
