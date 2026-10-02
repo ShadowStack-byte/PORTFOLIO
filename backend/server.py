@@ -79,6 +79,17 @@ async def get_status_checks():
     
     return status_checks
 
+@api_router.post("/visits/track")
+async def track_visit():
+    await db.meta.update_one({"key": "visits"}, {"$inc": {"count": 1}}, upsert=True)
+    doc = await db.meta.find_one({"key": "visits"})
+    return {"count": doc["count"]}
+
+@api_router.get("/visits/count")
+async def visit_count():
+    doc = await db.meta.find_one({"key": "visits"})
+    return {"count": doc["count"] if doc else 0}
+
 # Include the router in the main app
 app.include_router(api_router)
 

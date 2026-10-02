@@ -13,6 +13,7 @@ const Home = () => {
   const [copied, setCopied] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", project_type: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [visits, setVisits] = useState(null);
 
   useEffect(() => {
     const reveal = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting && entry.target.classList.add("is-visible")), { threshold: 0.12 });
@@ -21,6 +22,18 @@ const Home = () => {
     const move = (event) => { if (cursor) { cursor.style.left = `${event.clientX}px`; cursor.style.top = `${event.clientY}px`; } };
     window.addEventListener("mousemove", move);
     return () => { reveal.disconnect(); window.removeEventListener("mousemove", move); };
+  }, []);
+
+  useEffect(() => {
+    const trackVisit = async () => {
+      try {
+        const alreadyCounted = sessionStorage.getItem("vs-visit-counted");
+        const res = alreadyCounted ? await axios.get(`${API}/visits/count`) : await axios.post(`${API}/visits/track`);
+        sessionStorage.setItem("vs-visit-counted", "1");
+        setVisits(res.data.count);
+      } catch {}
+    };
+    trackVisit();
   }, []);
 
   const pitch = "Hi [Client Name], my name is Vikas Subramani. Together with my team, we specialize in unique, fully functional and beautifully animated websites designed to help businesses stand out online. Let's connect for a quick 5-minute chat about what you need!";
