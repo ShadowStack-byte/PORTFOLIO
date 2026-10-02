@@ -4,17 +4,14 @@
 
 body {
     margin: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Syne", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family:
-        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: "JetBrains Mono", source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-html { scroll-behavior: smooth; }
 
 @layer base {
     :root {
