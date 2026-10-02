@@ -20,7 +20,7 @@ Build a unique and beautiful portfolio using Vikas Subramani's profile, capabili
 
 ## Prioritized backlog
 - P0: Gmail API integration — send enquiry notifications to vikasvikkim143@gmail.com. BLOCKED: needs user's GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET from Google Cloud Console (OAuth consent screen + redirect URI <backend-url>/api/oauth/gmail/callback).
-- P1: Award-worthy redesign (user-requested): kinetic masked-line hero, lenis smooth scroll, framer-motion reveals, slow editorial marquee, original SVG logo + favicon, aligned bento, subtle parallax/3D hero. Brand name idea: "ShadowStack" (user's GitHub handle).
+- P1: Keep current editorial design as-is (user reverted the redesign request — site stays like before).
 - P1: GitHub save to https://github.com/ShadowStack-byte/PORTFOLIO — user must use the "Save to Github" button in chat input (agent cannot push).
 - P2: Add real project screenshots or case-study links when available.
 - P2: Add social profile URLs and optional analytics.
